@@ -27,7 +27,7 @@ qBtn.addEventListener('click', ()=>{
         if (isYes(ans2)){
             score++;
         }
-        if (!isYes(ans3)){
+        if (!(isYes(ans3))){
             score++;
         }
         if (isYes(ans4)){
@@ -39,14 +39,15 @@ qBtn.addEventListener('click', ()=>{
         if (isYes(ans6)){
             score++;
         }
-        if (!isYes(ans7)){
+        if (!(isYes(ans7))){
             score++;
         }
         if (isYes(ans8)){
             score++;
         }
 
-        results.textContent = `Hey, ${name} you got ${score} correct!!`;
+        let finalScore = score / 8 * 100;
+        results.textContent = `Hey, ${name} you got ${score} correct!! That is ${finalScore}%`;
 
     } else {
         //console.log('user cancelled');
