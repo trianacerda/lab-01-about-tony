@@ -114,9 +114,18 @@ footer {
 
 .bio {
     font-family: monospace;
+    font-size: x-large;
 }
 
 #tony {
-    width: 200px;
+    width: 800px;
     border-radius: 50%;
+}
+
+h2 {
+    font-family: monospace;
+}
+
+#btn {
+    border-radius: 40px;
 }
