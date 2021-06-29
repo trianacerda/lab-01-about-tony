@@ -47,7 +47,7 @@ qBtn.addEventListener('click', ()=>{
         }
 
         let finalScore = score / 8 * 100;
-        results.textContent = `Hey, ${name} you got ${score} correct!! That is ${finalScore}%`;
+        results.textContent = `Hey, ${name} you got ${score} correct!! That is ${Math.round(finalScore)}%`;
 
     } else {
         //console.log('user cancelled');
