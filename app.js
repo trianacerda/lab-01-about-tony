@@ -46,6 +46,9 @@ qBtn.addEventListener('click', ()=>{
             score++;
         }
 
+        alert('You have completed the quiz! Check yo results!!');
+        //console.log(alert);
+
         let finalScore = score / 8 * 100;
         results.textContent = `Hey, ${name} you got ${score} correct!! That is ${Math.round(finalScore)}%`;
 
@@ -54,3 +57,6 @@ qBtn.addEventListener('click', ()=>{
     }
 
 });
+
+//if (score)
+
