@@ -2,6 +2,7 @@ import { isYes } from './utils.js';
 
 const qBtn = document.getElementById('btn');
 const results = document.getElementById('results');
+const message = document.getElementById('message');
 
 
 qBtn.addEventListener('click', ()=>{
@@ -49,14 +50,18 @@ qBtn.addEventListener('click', ()=>{
         alert('You have completed the quiz! Check yo results!!');
         //console.log(alert);
 
-        let finalScore = score / 8 * 100;
-        results.textContent = `Hey, ${name} you got ${score} correct!! That is ${Math.round(finalScore)}%`;
-
-    } else {
+        let endScore = score / 8 * 100;
+        results.textContent = `Hey, ${name} you got ${score} correct!! That is ${Math.round(endScore)}%`;
+        if (endScore < 70) {
+            message.textContent = `'bummer you scored ${Math.round(endScore)}%, try again'`;
+            message.style.color = 'purple';
+        }
+        else {
+            message.textContent = `'ahhh ya! way to go you got ${Math.round(endScore)}%!'`;
+            message.style.color = 'green';
+        }
+    } 
+    //else {
         //console.log('user cancelled');
-    }
-
+    
 });
-
-//if (score)
-

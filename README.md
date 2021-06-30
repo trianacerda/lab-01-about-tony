@@ -8,9 +8,3 @@
 7) Think about how to validate each of your steps
 8) Consider your data model. What objects will you be using? What are the key/value pairs? What arrays do you need? What needs to live in local storage?
 9) Consider what features _depend_ on what other features. Use this dependency logic to figure out what order to complete tasks.
-
-## tony's quiz plan 
-
-1) picked tony for my quiz and decided how many questions I would ask.
-2) HTML I will need are : sections, p, h1 or h2, button, text, and labeling of classes and ids.
-3) 
