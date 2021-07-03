@@ -8,3 +8,16 @@
 7) Think about how to validate each of your steps
 8) Consider your data model. What objects will you be using? What are the key/value pairs? What arrays do you need? What needs to live in local storage?
 9) Consider what features _depend_ on what other features. Use this dependency logic to figure out what order to complete tasks.
+
+
+| html            | app.js                                                      | outcomes                                      |   |   |
+|-----------------|-------------------------------------------------------------|-----------------------------------------------|---|---|
+| title           | alert: ask user if they want to play. disable if they don't | display final score with personalized message |   |   |
+| bio/information | ask a set number of yes/no questions                        |                                               |   |   |
+| button(s)       | allow for different yes(s)                                  |                                               |   |   |
+| pictures        | when click start or end game                                |                                               |   |   |
+|                 | reset button                                                |                                               |   |   |
+|                 | comparing input/answer                                      |                                               |   |   |
+|                 | console.log functions to validate it's working              |                                               |   |   |
+|                 | import functions from utils                                 |                                               |   |   |
+|                 | count score using ++                                        |                                               |   |   |
